@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button>Button</button>
+    <script src="index.js"></script>
+  </body>
+  <script>
+    let button = document.querySelector('button');
+    button.className.add='green';
+    button.addEventListener('click', function(event) {
+    button.style.backgroundColor = 'rgb(124, 252, 0)';
+    })
+
+    let body = document.querySelector('body');
+    let paragraph = document.createElement('p');
+    paragraph.innerHTML = 'Galvanize is Awesome!!!!!!!!';
+    body.appendChild(paragraph);
+  </script>
+</html>
